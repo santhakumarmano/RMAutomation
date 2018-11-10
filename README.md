@@ -29,8 +29,13 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ##Santha(Sidenav)(11 nov)
 
 
-##Bala(Angular Material installs)(11 nov)
+##Bala(Angular Material installs)(9 nov)
 npm install --save @angular/material @angular/cdk @angular/animations
 Theme-->styles.css-->@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 Gesture Support -->npm install --save hammerjs
 Material Icons-->index.html--><link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+##Bala(Material SideNav)(10 nov)
+created material-module.ts file for importing all the material imports
+added sidenav in app.component.html
+
