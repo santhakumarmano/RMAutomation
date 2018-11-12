@@ -1,0 +1,12 @@
+.example-card {
+    max-width: 800px;
+    margin: 5%;
+  }
+  
+.login_card{
+    background-image: url('../../assets/login_card.png');
+    background-size: 300px 200px;
+    -webkit-clip-path: polygon(34% 0, 100% 99%, 100% 0);
+    clip-path: polygon(34% 0, 100% 99%, 100% 0);
+  }
+  
