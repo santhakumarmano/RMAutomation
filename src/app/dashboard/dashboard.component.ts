@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
+  sidenavWidth = 4;
   constructor() { }
 
   ngOnInit() {
   }
-
+  increase(){
+    this.sidenavWidth = 15;
+  }
+  decrease(){
+    this.sidenavWidth = 4;
+  }
 }

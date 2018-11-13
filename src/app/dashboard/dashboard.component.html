@@ -5,13 +5,52 @@
       <mat-icon>menu</mat-icon>
     </button>
     <span>RM Automation</span>
+    <span class="example-spacer"></span>
+    <button mat-button>About</button>
+    <button mat-button>Contact</button>
+    <mat-icon class="example-icon">thumb_up</mat-icon>
+    <mat-icon class="example-icon">thumb_down</mat-icon>
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>
+        <mat-icon>settings</mat-icon>
+        <span>Settings</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>format_paint</mat-icon>
+        <span>Theme</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>power_settings_new</mat-icon>
+        <span>Log out</span>
+      </button>
+    </mat-menu>
   </mat-toolbar-row>
 </mat-toolbar>
 <!-- sidenav  -->
 <mat-sidenav-container class="example-container">
-  <mat-sidenav #sidenav mode="side" [(opened)]="opened" (opened)="events.push('open!')" (closed)="events.push('close!')">
+  <!-- <mat-sidenav #sidenav mode="side" [(opened)]="opened" (opened)="events.push('open!')" (closed)="events.push('close!')">
     Sidenav content
-  </mat-sidenav>
+  </mat-sidenav> -->
+  <mat-sidenav #sidenav mode="side" class="example-sidenav" [ngStyle]="{ 'width.em': sidenavWidth }" opened="true" (mouseover)="increase()"   (mouseleave)="decrease()">
+      <mat-list role="list">
+          <mat-list-item role="listitem">
+              <mat-icon mat-list-icon>folder</mat-icon>
+              <h4 mat-line>Dashboard</h4>
+          </mat-list-item>
+          <mat-list-item role="listitem">
+              <mat-icon mat-list-icon>home</mat-icon>
+              <h4 mat-line>Home</h4>
+          </mat-list-item>
+          <mat-list-item role="listitem">
+              <mat-icon mat-list-icon>settings</mat-icon>
+              <h4 mat-line>Reports</h4>
+          </mat-list-item>
+        </mat-list>
+   </mat-sidenav> 
+
 
   <mat-sidenav-content>
     <!-- <div layout="row" gutterSize="50px"> -->
@@ -19,21 +58,27 @@
       <mat-grid-tile colspan="3" rowspan="1">
       </mat-grid-tile>
       <mat-grid-tile colspan="3" rowspan="1">
-        <mat-card>
+        <mat-card matRipple matRippleColor="" class="mat-elevation-z6" style="background-image: url('../../assets/trademark_user.jpg');">
           <mat-card-header>
-            <div mat-card-avatar class="example-header-image"></div>
-            <mat-card-title>Shiba Inu</mat-card-title>
-            <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+            <!-- <div mat-card-avatar class="example-header-image"></div> -->
+            <mat-card-title>IP User</mat-card-title>
+            <!-- <mat-card-subtitle>IP user Configuration</mat-card-subtitle> -->
           </mat-card-header>
+          <mat-card-content>
+            
+          </mat-card-content>
         </mat-card>
       </mat-grid-tile>
       <mat-grid-tile colspan="3" rowspan="1">
-        <mat-card>
+        <mat-card matRipple matRippleColor="" class="mat-elevation-z6" style="background-image: url('../../assets/copyright_user.png');">
           <mat-card-header>
-            <div mat-card-avatar class="example-header-image"></div>
-            <mat-card-title>Shiba Inu</mat-card-title>
-            <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+            <!-- <div mat-card-avatar class="example-header-image"></div> -->
+            <mat-card-title>Copyright User</mat-card-title>
+            <!-- <mat-card-subtitle>Dog Breed</mat-card-subtitle> -->
           </mat-card-header>
+          <mat-card-content>
+            
+          </mat-card-content>
         </mat-card>
       </mat-grid-tile>
       <mat-grid-tile colspan="3" rowspan="1">
@@ -41,21 +86,27 @@
       <mat-grid-tile colspan="3" rowspan="1">
       </mat-grid-tile>
       <mat-grid-tile colspan="3" rowspan="1">
-        <mat-card>
+        <mat-card matRipple matRippleColor="" class="mat-elevation-z6" style="background-image: url('../../assets/trademark_user.jpg');">
           <mat-card-header>
-            <div mat-card-avatar class="example-header-image"></div>
-            <mat-card-title>Shiba Inu</mat-card-title>
-            <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+            <!-- <div mat-card-avatar class="example-header-image"></div> -->
+            <mat-card-title>Trademark User</mat-card-title>
+            <!-- <mat-card-subtitle>Dog Breed</mat-card-subtitle> -->
           </mat-card-header>
+          <mat-card-content>
+            
+          </mat-card-content>
         </mat-card>
       </mat-grid-tile>
       <mat-grid-tile colspan="3" rowspan="1">
-        <mat-card>
+        <mat-card matRipple matRippleColor="" class="mat-elevation-z6" style="background-image: url('../../assets/Registration.jpg');">
           <mat-card-header>
-            <div mat-card-avatar class="example-header-image"></div>
-            <mat-card-title>Shiba Inu</mat-card-title>
-            <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+            <!-- <div mat-card-avatar class="example-header-image"></div> -->
+            <mat-card-title>Registration</mat-card-title>
+            <!-- <mat-card-subtitle>General Registration</mat-card-subtitle> -->
           </mat-card-header>
+          <mat-card-content>
+            
+          </mat-card-content>
         </mat-card>
       </mat-grid-tile>
       <mat-grid-tile colspan="3" rowspan="1">
